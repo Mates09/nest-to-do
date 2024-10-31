@@ -69,6 +69,8 @@ $ npm install -g mau
 $ mau deploy
 ```
 
+.env setup
+
 ```bash
 $ MONGO_URI=<mongoDB>
 $ JWT_SECRET=<secret>
