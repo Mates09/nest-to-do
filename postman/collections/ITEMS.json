@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "b2b3c508-6bb4-4965-8466-29388746360f",
+		"name": "ITEMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "38937380-b2b3c508-6bb4-4965-8466-29388746360f"
+	},
+	"item": [
+		{
+			"name": "CREATE ITEM",
+			"id": "16e6e9b9-104e-41ec-adf0-9e5b72d2f698",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE1ZTlmYWMzYjgyNGJkZjRlYjQ4MyIsImlhdCI6MTczMDI1MDA5NywiZXhwIjoxNzMwNDIyODk3fQ.Yd0XWRr7XIsyyk7lzQmJPThhODoQ6qXmlRKtDfTJNOk",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "title 2",
+							"type": "text"
+						},
+						{
+							"key": "text",
+							"value": "text 2",
+							"type": "text"
+						},
+						{
+							"key": "deadline",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/item/create/6722b1f09ecff6c2f38a7658",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"item",
+						"create",
+						"6722b1f09ecff6c2f38a7658"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ITEMS IN LIST",
+			"id": "cdb52cb0-a642-43b6-a34d-9540da9ff1a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE1ZTlmYWMzYjgyNGJkZjRlYjQ4MyIsImlhdCI6MTczMDI1MDA5NywiZXhwIjoxNzMwNDIyODk3fQ.Yd0XWRr7XIsyyk7lzQmJPThhODoQ6qXmlRKtDfTJNOk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "localhost:3000/item/getItems/6722b1f09ecff6c2f38a7658",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"item",
+						"getItems",
+						"6722b1f09ecff6c2f38a7658"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE STATUS",
+			"id": "28f98a70-490e-4084-b0e1-0f59a2b2bd5c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MjE1ZTlmYWMzYjgyNGJkZjRlYjQ4MyIsImlhdCI6MTczMDI1MDA5NywiZXhwIjoxNzMwNDIyODk3fQ.Yd0XWRr7XIsyyk7lzQmJPThhODoQ6qXmlRKtDfTJNOk",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "Terminated",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/item/status/6722b2039ecff6c2f38a765c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"item",
+						"status",
+						"6722b2039ecff6c2f38a765c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
