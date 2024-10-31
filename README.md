@@ -69,10 +69,11 @@ $ npm install -g mau
 $ mau deploy
 ```
 
-```.env
-MONGO_URI=<mongoDB>
-JWT_SECRET=<secret>
+```bash
+$ MONGO_URI=<mongoDB>
+$ JWT_SECRET=<secret>
 ```
+
 
 With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
 
